@@ -11,7 +11,7 @@ Desenvolva uma API REST que consuma um serviço [(JSON placeholder)](https://jso
 > Como executar:
 
 ```sh
-python -m venv flenv
+python3 -m venv flenv
 flenv/Scripts/activate
 pip install -r requirements.txt
 python app.py
