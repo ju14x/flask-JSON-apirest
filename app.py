@@ -1,8 +1,13 @@
 from flask import Flask
+from flask_pydantic_spec import FlaskPydanticSpec
 
-app = Flask(__name__, template_folder='templates', static_folder='static')
+app = Flask(__name__)
+spec = FlaskPydanticSpec('flaskinho', title='Flaskinho API REST')
+spec.register(app)  # registering app's endpoints
 
-from views import *
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route('/')
+def get_data():
+    return 'oi'
+
+app.run()
