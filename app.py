@@ -1,9 +1,9 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_pydantic_spec import (
     FlaskPydanticSpec, Response, Request
 )
 from pydantic import BaseModel
-from tinydb import TinyDB
+from tinydb import TinyDB, Query
 
 app = Flask(__name__)
 spec = FlaskPydanticSpec('flaskinho', title='Flaskinho API REST')
@@ -17,13 +17,13 @@ class Data(BaseModel):
     completed: bool
 
 
-@app.get('/')
-@spec.validate(resp=Response(HTTP_200=Data))
+@app.get('/todos')
 def get_data():
-    return 'oi'
+    """Returns all requested JSONs"""
+    return jsonify(database.all())
 
 
-@app.post('/')
+@app.post('/todos')
 @spec.validate(
     body=Request(Data), resp=Response(HTTP_200=Data)
 )
