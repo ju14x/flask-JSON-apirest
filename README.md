@@ -4,21 +4,39 @@ Desenvolva uma API REST que consuma um serviço [(JSON placeholder)](https://jso
 
 > Ferramentas:
 
-[requirements.txt](https://github.com/juliax5/flask-JSON-apirest/blob/main/requirements.txt)
+-   [requirements.txt](https://github.com/juliax5/flask-JSON-apirest/blob/main/requirements.txt)
 
 > Como executar:
 
 ```sh
+git clone https://github.com/juliax5/flask-JSON-apirest.git
 cd flask-JSON-apirest
 python3 -m venv flenv
+```
 
+Ativando o ambiente virtual (Windows):
+
+```sh
 flenv/Scripts/activate  # (pwsh)
+```
 
+Ativando o ambiente virtual (Linux):
+
+```sh
 source flenv/bin/activate  # (bash)
+```
 
+Por fim:
+
+```sh
 pip install -r requirements.txt
 flask run
-
-http://localhost:5000/
-http://localhost:5000/apidoc/swagger
 ```
+
+Para acessar a API:
+
+-   http://localhost:5000/
+
+Para acessar o painel Swagger e testar os endpoints:
+
+-   http://localhost:5000/apidoc/swagger
