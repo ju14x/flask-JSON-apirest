@@ -2,11 +2,11 @@
 
 Desenvolva uma API REST que consuma um serviço [(JSON placeholder)](https://jsonplaceholder.typicode.com/todos) e retorne uma lista com os 5 primeiros resultados.
 
-> Ferramentas:
+Ferramentas:
 
 -   [requirements.txt](https://github.com/juliax5/flask-JSON-apirest/blob/main/requirements.txt)
 
-> Como executar:
+Como executar:
 
 ```sh
 git clone https://github.com/juliax5/flask-JSON-apirest.git
@@ -40,3 +40,13 @@ Para acessar a API:
 Para acessar o painel Swagger e testar os endpoints:
 
 -   http://localhost:5000/apidoc/swagger
+
+Rodando com Docker:
+
+```sh
+docker build -t flask-api .
+```
+
+```sh
+docker run -d flask-api
+```
