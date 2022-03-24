@@ -44,9 +44,9 @@ Para acessar o painel Swagger e testar os endpoints:
 Rodando com Docker:
 
 ```sh
-docker build -t flask-api .
+docker-compose build
 ```
 
 ```sh
-docker run -d flask-api
+docker run desafioflaskapi
 ```

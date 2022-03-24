@@ -15,7 +15,9 @@
         {
             "type": "docker-run",
             "label": "docker-run: debug",
-            "dependsOn": ["docker-build"],
+            "dependsOn": [
+                "docker-build"
+            ],
             "dockerRun": {
                 "env": {
                     "FLASK_APP": "app.py"
