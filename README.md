@@ -44,9 +44,9 @@ Para acessar o painel Swagger e testar os endpoints:
 Rodando com Docker:
 
 ```sh
-docker-compose build
+-
 ```
 
 ```sh
-docker run desafioflaskapi
+-
 ```
