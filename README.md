@@ -41,12 +41,14 @@ Para acessar o painel Swagger e testar os endpoints:
 
 -   http://localhost:5000/apidoc/swagger
 
-Rodando com Docker:
+(Docker) Para criar a imagem:
 
 ```sh
--
+docker image build -t flask-api .
 ```
 
+Iniciar o container:
+
 ```sh
--
+docker container run -d -p 5000:5000 flask-api
 ```
