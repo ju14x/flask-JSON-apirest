@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "8602c02c-52ee-4dd5-9d49-0e97bbe54f4d",
+		"name": "Flask REST API challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000"
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "566"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Apr 2022 14:50:36 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"completed\": false,\n        \"id\": 1,\n        \"title\": \"delectus aut autem\",\n        \"userId\": 1\n    },\n    {\n        \"completed\": false,\n        \"id\": 2,\n        \"title\": \"quis ut nam facilis et officia qui\",\n        \"userId\": 1\n    },\n    {\n        \"completed\": false,\n        \"id\": 3,\n        \"title\": \"fugiat veniam minus\",\n        \"userId\": 1\n    },\n    {\n        \"completed\": true,\n        \"id\": 4,\n        \"title\": \"et porro tempora\",\n        \"userId\": 1\n    },\n    {\n        \"completed\": false,\n        \"id\": 5,\n        \"title\": \"laboriosam mollitia et enim quasi adipisci quia provident illum\",\n        \"userId\": 1\n    }\n]"
+				}
+			]
+		}
+	]
+}
