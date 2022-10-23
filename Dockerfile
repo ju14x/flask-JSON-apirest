@@ -1,20 +1,13 @@
-# For more information, please refer to https://aka.ms/vscode-docker-python
 FROM python:3.10.3
 
-# Keeps Python from generating .pyc files in the container
-ENV PYTHONDONTWRITEBYTECODE=1
+RUN pip install --upgrade pip
 
-# Turns off buffering for easier container logging
-ENV PYTHONUNBUFFERED=1
-
-# Install pip requirements
-COPY requirements.txt .
-RUN python -m pip install -r requirements.txt
+COPY ./requirements.txt ./.flaskenv ./app.py /app/
 
 WORKDIR /app
-COPY . /app
 
-ENV PORT=5000
+RUN pip install -r requirements.txt
+
+CMD flask run -h 0.0.0.0 -p 5000
+
 EXPOSE 5000
-
-CMD ["flask", "run"]
